@@ -3,6 +3,7 @@
 import {useEffect, useState} from "react";
 import axios from "axios"
 import {Link} from 'react-router-dom'
+import Navbar from "./navbar";
 
 
 
@@ -28,17 +29,7 @@ const Home =()=> {
   return (
    <>
   
-
-    {/* <Navbar collapseOnSelect expand="lg" fixed="top" >
-  <Container>
-  
-  <a passHref href="/"><span className='navbrand'>Purple Glib</span></a>
-  
-  </Container>
-</Navbar> */}
-
-
-      
+<Navbar />
       <div className="home">
       
     {
@@ -65,7 +56,7 @@ const Home =()=> {
         </div>
         <span className="postTitle">
         
-          <a passHref href={`/item/${data.id}`} className="a">
+          <a passHref href={`/${data.id}`} className="a">
           <h2>{data.title}</h2>  
           </a>
           

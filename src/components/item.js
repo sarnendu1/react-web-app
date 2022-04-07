@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import axios from "axios"
 import { useParams } from 'react-router-dom';
 import {Link} from 'react-router-dom'
+import Navbar from './navbar';
 
 const Item = () => {
 
@@ -24,8 +25,7 @@ const Item = () => {
   return (
     <>
  
-   
-  
+  <Navbar />
  <div className='flex'>
        <div>
           
@@ -53,7 +53,44 @@ const Item = () => {
               Director:
                 <b>{data.director}</b>
               </span>
+
               
+              
+            </div>
+            <div className="singlePostInfo mt-5">
+              <span>
+              Producer:
+                <b>{data.producer}</b>
+              </span>
+
+            </div>
+            <div className="singlePostInfo mt-5">
+              <span>
+              Release_date:
+                <b>{data.release_date}</b>
+              </span>
+
+            </div>
+            <div className="singlePostInfo mt-5">
+              <span>
+              Running_time:
+                <b>{data.running_time}</b>
+              </span>
+
+            </div>
+            <div className="singlePostInfo mt-5">
+              <span>
+              Director:
+                <b>{data.producer}</b>
+              </span>
+
+            </div>
+            <div className="singlePostInfo mt-5">
+              <span>
+              Director:
+                <b>{data.producer}</b>
+              </span>
+
             </div>
 
          

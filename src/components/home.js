@@ -56,9 +56,9 @@ const Home =()=> {
         </div>
         <span className="postTitle">
         
-          <a passHref href={`/${data.id}`} className="a">
+          <Link passHref to={`/${data.id}`} className="a">
           <h2>{data.title}</h2>  
-          </a>
+          </Link>
           
         </span>
         <hr />
